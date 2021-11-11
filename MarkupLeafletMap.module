@@ -234,7 +234,7 @@ LINES;
 
         $out .= "<div id='$id' class='$options[class]'$style></div>";
 
-        $inlineScript = "<script type='text/javascript'>\n$(function() {\n" .
+        $inlineScript = "<script type='text/plain' data-type='text/javascript' data-category='external_media' class='require-consent'>\n$(function() {\n" .
             "var $id = new jsMarkupLeafletMap();\n" .
             "$id.setOption('zoom', $zoom);\n" .
             "$id.setOption('scrollWheelZoom', {$options['scrollWheelZoom']});\n" .
